@@ -24,23 +24,23 @@ df = pd.read_csv("annual_balance.csv")
 df
 df.head()
 ```
-![image](https://github.com/ManiKandan228/Ex-10-Data-Science-Process-on-Complex-Dataset/assets/119160414/45c8afb7-2a2b-47a4-be89-c201ba2a12f8)
+![image](https://github.com/NaveenKumar-008/EX-10-Data-Science-Process-on-Complex-Dataset/assets/128135244/8e5c1126-b0ea-4d38-a37c-bacdf24ab2ca)
 
-![image](https://github.com/ManiKandan228/Ex-10-Data-Science-Process-on-Complex-Dataset/assets/119160414/cfc5b441-1b5d-482d-971d-df25ceca7943)
+![image](https://github.com/NaveenKumar-008/EX-10-Data-Science-Process-on-Complex-Dataset/assets/128135244/7e805629-25de-4f8a-830f-210b241369e8)
+
 # DATA CLEANING:-
 # Missing Value:
 ```
 df.isnull().sum()
 ```
-![image](https://github.com/ManiKandan228/Ex-10-Data-Science-Process-on-Complex-Dataset/assets/119160414/0624c40a-7503-41fa-a590-adbca9246384)
+![image](https://github.com/NaveenKumar-008/EX-10-Data-Science-Process-on-Complex-Dataset/assets/128135244/f40d8e28-59fe-4e51-87e0-bab1e1184b05)
 # Duplication:
 ```
 df.dropna()
 data = df.drop_duplicates()
 data
 ```
-![image](https://github.com/ManiKandan228/Ex-10-Data-Science-Process-on-Complex-Dataset/assets/119160414/d853aaad-6b01-4dd9-8a98-9674f78135ce)
-![image](https://github.com/ManiKandan228/Ex-10-Data-Science-Process-on-Complex-Dataset/assets/119160414/cf41fe93-5d95-4df3-b3cf-c4ffc223fc32)
+![image](https://github.com/NaveenKumar-008/EX-10-Data-Science-Process-on-Complex-Dataset/assets/128135244/9fbe703a-a190-4625-9a71-4b362145c13d)
 # FEATURE GENERATION:-
 ```
 from sklearn.preprocessing import OrdinalEncoder
@@ -51,7 +51,7 @@ encoded_features = encoder.transform(df[categorical_features])
 df[categorical_features] = encoded_features
 print(df.head())
 ```
-![image](https://github.com/ManiKandan228/Ex-10-Data-Science-Process-on-Complex-Dataset/assets/119160414/b0819bfc-e294-4cbf-927f-721fbb6e612c)
+![image](https://github.com/NaveenKumar-008/EX-10-Data-Science-Process-on-Complex-Dataset/assets/128135244/1bc47393-e1cd-448c-8cba-18e43b84a422)
 # DATA VIRTUALIZATION:-
 # Pair Plot:
 ```
@@ -60,7 +60,7 @@ sns.pairplot(df[numeric_features])
 plt.title('Pairplot of Numerical Features')
 plt.show()
 ```
-![image](https://github.com/ManiKandan228/Ex-10-Data-Science-Process-on-Complex-Dataset/assets/119160414/3689058e-1d9e-4f76-8217-44a8434e0326)
+![image](https://github.com/NaveenKumar-008/EX-10-Data-Science-Process-on-Complex-Dataset/assets/128135244/af26c0db-5e63-4329-942d-e55855e2ec02)
 
 # Bar Plot:
 ```
